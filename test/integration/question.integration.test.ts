@@ -1,3 +1,5 @@
+process.env.DATABASE_URL = "file:./test.db";
+
 import request from 'supertest';
 import { INestApplication } from '@nestjs/common';
 import { Test } from '@nestjs/testing';
