@@ -1,0 +1,290 @@
+@baseUrl = http://localhost:3333
+@authtoken = {{user_authentication.response.body.access_token}}
+
+# @name app_health_check
+GET {{baseUrl}}/health
+Content-Type: application/json
+
+###
+
+# @name create_account
+POST {{baseUrl}}/accounts
+Content-Type: application/json
+
+{
+   "name": "Rebeca Santos",
+   "email": "rebeca.santos@example.com",
+   "password": "12345",
+   "birthdate": "2003-05-28",
+   "role": "USER",
+   "education": "GRADUACAO",
+   "gender": "MULHER"
+}
+
+###
+
+# @name user_authentication
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+   "email": "user@example.com",
+   "password": "12345"
+}
+
+###
+
+# @name forgot-password
+POST {{baseUrl}}/login/forgot-password
+Content-Type: application/json
+
+{
+   "email": "user@example.com"
+}
+
+###
+
+# @name reset-password
+PUT {{baseUrl}}/login/reset-password/{{authtoken}}
+Content-Type: application/json
+
+{
+  "password": "novasenha123",
+  "confirmPassword": "novasenha123"
+}
+
+###
+
+# @name token_route_test
+POST {{baseUrl}}/token-route
+Content-Type: application/json
+Authorization: Bearer {{authtoken}}
+
+###
+
+# @name user_role_route_test
+POST {{baseUrl}}/user-role-route
+Content-Type: application/json
+Authorization: Bearer {{authtoken}}
+
+###
+
+# @name adm_role_route_test
+POST {{baseUrl}}/adm-role-route
+Content-Type: application/json
+Authorization: Bearer {{authtoken}}
+
+###
+
+# @name get_email_route_test
+POST {{baseUrl}}/get-email
+Content-Type: application/json
+Authorization: Bearer {{authtoken}}
+
+###
+
+# @name create_intelligence_type
+POST {{baseUrl}}/intelligence-types
+Content-Type: application/json
+
+{
+   "description": "A inteligência linguística está associada à capacidade de linguagem, fala, escrita e expressão de uma pessoa",
+   "name": "Intrapessoal"
+}
+
+###
+
+# @name create_intelligence_type_with_course
+POST {{baseUrl}}/intelligence-types
+Content-Type: application/json
+
+{
+   "description": "Refere-se à capacidade de um indivíduo de lidar com raciocínio lógico e operações envolvendo números",
+   "name": "Lógico-matemática",
+   "courses": [{
+    "name": "Jornalismo"
+   }]
+}
+
+###
+
+# @name create_course
+POST {{baseUrl}}/courses
+Content-Type: application/json
+
+{
+   "name": "Quimica",
+   "description": "Curso de Quimica"
+}
+
+###
+
+# @name create_course_with_intelligence_type
+POST {{baseUrl}}/courses
+Content-Type: application/json
+
+{
+   "name": "Literatura",
+   "intelligences": [{
+    "name": "Linguística"
+   }]
+}
+
+###
+
+# @name create_question_with_intelligence_type
+POST {{baseUrl}}/questions
+Content-Type: application/json
+
+{
+   "question_number": 32,
+   "question_text": "Quanto é 2+2?",
+   "score_value": 5,
+   "intelligence_name": "Intrapessoal"
+}
+
+###
+
+# @name fetch_questions_with_pagination
+GET {{baseUrl}}/questions?page=3&pageSize=3
+Content-Type: application/json
+
+###
+
+# @name create_test_result
+POST {{baseUrl}}/test-results
+Content-Type: application/json
+Authorization: Bearer {{authtoken}}
+
+{
+  "answer_values": [
+   {
+    "question_number": 1,
+    "question_value": 1
+   },
+   {
+    "question_number": 2,
+    "question_value": 5
+   },
+   {
+    "question_number": 3,
+    "question_value": 1
+   },
+   {
+    "question_number": 4,
+    "question_value": 3
+   },
+   {
+    "question_number": 5,
+    "question_value": 5
+   },
+   {
+    "question_number": 6,
+    "question_value": 1
+   },
+   {
+    "question_number": 7,
+    "question_value": 4
+   },
+   {
+    "question_number": 8,
+    "question_value": 3
+   },
+   {
+    "question_number": 9,
+    "question_value": 2
+   },
+   {
+    "question_number": 10,
+    "question_value": 5
+   },
+   {
+    "question_number": 11,
+    "question_value": 1
+   },
+   {
+    "question_number": 12,
+    "question_value": 2
+   },
+   {
+    "question_number": 13,
+    "question_value": 3
+   },
+   {
+    "question_number": 14,
+    "question_value": 4
+   },
+   {
+    "question_number": 15,
+    "question_value": 5
+   },
+   {
+    "question_number": 16,
+    "question_value": 5
+   },
+   {
+    "question_number": 17,
+    "question_value": 4
+   },
+   {
+    "question_number": 18,
+    "question_value": 3
+   },
+   {
+    "question_number": 19,
+    "question_value": 2
+   },
+   {
+    "question_number": 20,
+    "question_value": 4
+   },
+   {
+    "question_number": 21,
+    "question_value": 1
+   },
+   {
+    "question_number": 22,
+    "question_value": 2
+   },
+   {
+    "question_number": 23,
+    "question_value": 3
+   },
+   {
+    "question_number": 24,
+    "question_value": 4
+   },
+   {
+    "question_number": 25,
+    "question_value": 2
+   },
+   {
+    "question_number": 26,
+    "question_value": 5
+   },
+   {
+    "question_number": 27,
+    "question_value": 4
+   },
+   {
+    "question_number": 28,
+    "question_value": 3
+   },
+   {
+    "question_number": 29,
+    "question_value": 2
+   },
+   {
+    "question_number": 30,
+    "question_value": 1
+   },
+   {
+    "question_number": 31,
+    "question_value": 2
+   },
+   {
+    "question_number": 32,
+    "question_value": 3
+   }
+  ]
+}

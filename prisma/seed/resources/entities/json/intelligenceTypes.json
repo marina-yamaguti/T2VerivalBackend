@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Lógico-matemática",
+    "description": "Refere-se à capacidade de um indivíduo de lidar com raciocínio lógico e operações envolvendo números",
+    "courses": [{ "name": "Administração" }, { "name": "Economia" }, { "name": "Ciência da Computação" }]
+  },
+  {
+    "name": "Espacial",
+    "description": "Habilidade em perceber o mundo visual e espacial de forma precisa",
+    "courses": [
+      { "name": "Arquitetura e Urbanismo" },
+      { "name": "Design" },
+      { "name": "Engenharia Civil" }
+    ]
+  },
+  {
+    "name": "Intrapessoal",
+    "description": "Capacidade de compreender as próprias emoções, motivações, objetivos e pensamentos",
+    "courses": [{ "name": "Psicologia" }, { "name": "Filosofia" }, { "name": "Escrita Criativa"}]
+  },
+  {
+    "name": "Linguística",
+    "description": "Habilidade em usar palavras efetivamente, tanto na comunicação oral quanto escrita",
+    "courses": [{ "name": "Jornalismo" }, { "name": "Letras: Língua Inglesa" }, { "name": "Direito" }]
+  },
+  {
+    "name": "Musical",
+    "description": "Sensibilidade e habilidade para perceber, criar e expressar-se através do som",
+    "courses": [
+      { "name": "Musica" },
+      { "name": "Produção Audiovisual" },
+      { "name": "Artes Cênicas" }	
+    ]
+  },
+  {
+    "name": "Naturalista",
+    "description": "Capacidade de reconhecer e categorizar padrões no mundo natural",
+    "courses": [{ "name": "Ciências Biológicas" }, { "name": "Engenharia de Energias Renováveis"}, { "name": "Geografia"}]
+  },
+  {
+    "name": "Corporal-cinestésica",
+    "description": "Habilidade em usar o corpo de forma coordenada e expressiva",
+    "courses": [
+      { "name": "Educação Física" },
+      { "name": "Fisioterapia" },
+      { "name": "Dança" }
+    ]
+  },
+  {
+    "name": "Interpessoal",
+    "description": "Habilidade em compreender e interagir efetivamente com outras pessoas",
+    "courses": [
+      { "name": "Relações Internacionais" },
+      { "name": "Pedagogia" },
+      { "name": "Publicidade e Propaganda" }
+    ]
+  }
+]

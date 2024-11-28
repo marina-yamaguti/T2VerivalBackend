@@ -1,0 +1,91 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+enum Education {
+  FUNDAMENTAL
+  MEDIO
+  GRADUACAO
+  POSGRADUACAO
+  MESTRADO
+  DOUTORADO
+}
+
+enum Gender {
+  HOMEM
+  MULHER
+  OUTRO
+}
+
+model User {
+  id         String       @id @default(uuid())
+  name       String
+  email      String       @unique
+  password   String
+  birthdate  DateTime?    @db.Date
+  role       Role         @default(USER)
+  education  Education?
+  gender     Gender?
+  testResult TestResult[]
+
+  @@map("users")
+}
+
+model TestResult {
+  id             String           @id @default(uuid())
+  total_score    Float
+  user           User             @relation(fields: [id_user], references: [id])
+  id_user        String
+  intell_type    IntelligenceType @relation(fields: [intell_type_id], references: [id])
+  intell_type_id String
+  created_at     DateTime         @default(now())
+
+  @@map("test_results")
+}
+
+model Question {
+  id              String            @id @default(uuid())
+  question_number Int               @unique
+  question_text   String
+  score_value     Int
+  Intell_type     IntelligenceType? @relation(fields: [intell_type_id], references: [id])
+  intell_type_id  String?
+  created_at      DateTime          @default(now())
+  updated_at      DateTime          @default(now())
+
+  @@map("questions")
+}
+
+model IntelligenceType {
+  id          String       @id @default(uuid())
+  description String
+  name        String
+  test_result TestResult[]
+  question    Question[]
+  course      Course[]
+  created_at  DateTime     @default(now())
+  updated_at  DateTime     @default(now())
+
+  @@map("intelligence_types")
+}
+
+model Course {
+  id          String             @id @default(uuid())
+  name        String
+  description String
+  intell_type IntelligenceType[]
+  created_at  DateTime           @default(now())
+  updated_at  DateTime           @default(now())
+
+  @@map("courses")
+}

@@ -1,0 +1,338 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "Costumo desenvolver equações para descrever relacionamentos e / ou para explicar minhas observações",
+    "score_value": 5,
+    "intelligenceType": "Lógico-Matemática"
+  },
+  {
+    "question_number": 2,
+    "question_text": "Eu gosto de manter um diário de minhas experiências",
+    "score_value": 5,
+    "intelligenceType": "Intrapessoal"
+  },
+  {
+    "question_number": 3,
+    "question_text": "O mundo de plantas e animais é importante para mim",
+    "score_value": 5,
+    "intelligenceType": "Naturalista"
+  },
+  {
+    "question_number": 4,
+    "question_text": "Eu gosto de estar fisicamente apto",
+    "score_value": 5,
+    "intelligenceType": "Corporal-cinestésica"
+  },
+  {
+    "question_number": 5,
+    "question_text": "Eu falo muito e gosto de contar histórias",
+    "score_value": 5,
+    "intelligenceType": "Linguística"
+  },
+  {
+    "question_number": 6,
+    "question_text": "Muitas vezes penso sobre os problemas em minha comunidade, estado e / ou mundo e que eu posso fazer para ajudar a corrigir qualquer um deles",
+    "score_value": 5,
+    "intelligenceType": "Interpessoal"
+  },
+  {
+    "question_number": 7,
+    "question_text": "Lembro-me a melodia de uma canção quando perguntado",
+    "score_value": 5,
+    "intelligenceType": "Musical"
+  },
+  {
+    "question_number": 8,
+    "question_text": "Gosto de caminhar em lugares naturais",
+    "score_value": 5,
+    "intelligenceType": "Naturalista"
+  },
+  {
+    "question_number": 9,
+    "question_text": "Eu gosto de estar sozinho e pensar sobre a minha vida",
+    "score_value": 5,
+    "intelligenceType": "Intrapessoal"
+  },
+  {
+    "question_number": 10,
+    "question_text": "Eu tenho um bom equilíbrio e coordenação olho-mão e me sinto confortável em esportes que usam uma bola",
+    "score_value": 5,
+    "intelligenceType": "Corporal-cinestésica"
+  },
+  {
+    "question_number": 11,
+    "question_text": "Tenho amplos e variados interesses musicais, incluindo clássicos e contemporâneos",
+    "score_value": 5,
+    "intelligenceType": "Musical"
+  },
+  {
+    "question_number": 12,
+    "question_text": "Eu tento não perder meu tempo com perseguições triviais",
+    "score_value": 5,
+    "intelligenceType": "Intrapessoal"
+  },
+  {
+    "question_number": 13,
+    "question_text": "Eu costumo entender as coisas ao meu redor através de um sentido matemático",
+    "score_value": 5,
+    "intelligenceType": "Lógico-Matemática"
+  },
+  {
+    "question_number": 14,
+    "question_text": "Sou rápido para sentir nos outros desonestidade e desejo de me manipular",
+    "score_value": 5,
+    "intelligenceType": "Interpessoal"
+  },
+  {
+    "question_number": 15,
+    "question_text": "Muitas vezes penso sobre a influência que tenho sobre os outros",
+    "score_value": 5,
+    "intelligenceType": "Intrapessoal"
+  },
+  {
+    "question_number": 16,
+    "question_text": "Gosto de ler e leio diariamente",
+    "score_value": 5,
+    "intelligenceType": "Linguística"
+  },
+  {
+    "question_number": 17,
+    "question_text": "Eu posso facilmente reproduzir cor, forma, sombreamento e textura em desenhos",
+    "score_value": 5,
+    "intelligenceType": "Espacial"
+  },
+  {
+    "question_number": 18,
+    "question_text": "Eu tenho a capacidade de representar o que eu vejo pelo desenho ou pintura",
+    "score_value": 5,
+    "intelligenceType": "Espacial"
+  },
+  {
+    "question_number": 19,
+    "question_text": "Eu sempre sei onde estou em relação à minha casa",
+    "score_value": 5,
+    "intelligenceType": "Espacial"
+  },
+  {
+    "question_number": 20,
+    "question_text": "Eu respondo a todas as pessoas com entusiasmo, livre de viés ou preconceito",
+    "score_value": 5,
+    "intelligenceType": "Interpessoal"
+  },
+  {
+    "question_number": 21,
+    "question_text": "Eu me orgulho de ter um grande vocabulário",
+    "score_value": 5,
+    "intelligenceType": "Linguística"
+  },
+  {
+    "question_number": 22,
+    "question_text": "Eu não me perco facilmente e posso me orientar tanto com mapas ou marcos",
+    "score_value": 5,
+    "intelligenceType":"Espacial"
+  },
+  {
+    "question_number": 23,
+    "question_text": "Eu me considero um atleta",
+    "score_value": 5,
+    "intelligenceType": "Corporal-cinestésica"
+  },
+  {
+    "question_number": 24,
+    "question_text": "Minha educação musical começou quando eu era mais jovem e continua ainda hoje",
+    "score_value": 5,
+    "intelligenceType": "Musical"
+  },
+  {
+    "question_number": 25,
+    "question_text": "Eu sinto que as pessoas de todas as idades gostam de mim",
+    "score_value": 5,
+    "intelligenceType": "Interpessoal"
+  },
+  {
+    "question_number": 26,
+    "question_text": "Matemática sempre foi uma das minhas aulas favoritas",
+    "score_value": 5,
+    "intelligenceType": "Lógico-Matemática"
+  },
+  {
+    "question_number": 27,
+    "question_text": "Gosto de situações sociais novas ou únicas",
+    "score_value": 5,
+    "intelligenceType": "Interpessoal"
+  },
+  {
+    "question_number": 28,
+    "question_text": "Gosto de caça e pesca",
+    "score_value": 5,
+    "intelligenceType": "Naturalista"
+  },
+  {
+    "question_number": 29,
+    "question_text": "Eu gosto da emoção da competição pessoal e da equipe",
+    "score_value": 5,
+    "intelligenceType": "Interpessoal"
+  },
+  {
+    "question_number": 30,
+    "question_text": "Eu gosto de aprender sobre a natureza",
+    "score_value": 5,
+    "intelligenceType": "Naturalista"
+  },
+  {
+    "question_number": 31,
+    "question_text": "A música é muito importante para mim na vida diária",
+    "score_value": 5,
+    "intelligenceType": "Musical"
+  },
+  {
+    "question_number": 32,
+    "question_text": "Gosto de solucionar quebra-cabeças",
+    "score_value": 5,
+    "intelligenceType":"Espacial"
+  },
+  {
+    "question_number": 33,
+    "question_text": "Gosto de estar ao ar livre e praticar diferentes esportes",
+    "score_value": 5,
+    "intelligenceType": "Inteligência corporal-cinestésica"
+  },
+  {
+    "question_number": 34,
+    "question_text": "Sinto-me seguro quando estou com estranhos",
+    "score_value": 5,
+    "intelligenceType": "Inteligência interpessoal"
+  },
+  {
+    "question_number": 35,
+    "question_text": "Fico ansioso ao visitar o zoológico",
+    "score_value": 5,
+    "intelligenceType": "Inteligência intrapessoal"
+  },
+  {
+    "question_number": 36,
+    "question_text": "Eu tenho um bom senso de afinação, tempo e ritmo",
+    "score_value": 5,
+    "intelligenceType": "Inteligência musical"
+  },
+  {
+    "question_number": 37,
+    "question_text": "Minha coordenação me destaca em atividades de alta velocidade",
+    "score_value": 5,
+    "intelligenceType": "Inteligência corporal-cinestésica"
+  },
+  {
+    "question_number": 38,
+    "question_text": "Eu gosto de pensar sobre questões numéricas e examinar as estatísticas",
+    "score_value": 5,
+    "intelligenceType": "Inteligência lógico-matemática"
+  },
+  {
+    "question_number": 39,
+    "question_text": "Eu sou sempre totalmente honesto comigo mesmo",
+    "score_value": 5,
+    "intelligenceType": "Inteligência intrapessoal"
+  },
+  {
+    "question_number": 40,
+    "question_text": "Orgulho-me de minhas realizações musicais",
+    "score_value": 5,
+    "intelligenceType": "Inteligência musical"
+  },
+  {
+    "question_number": 41,
+    "question_text": "Gosto de elogiar os outros quando eles fizeram bem",
+    "score_value": 5,
+    "intelligenceType": "Inteligência interpessoal"
+  },
+  {
+    "question_number": 42,
+    "question_text": "Gosto de ouvir discursos",
+    "score_value": 5,
+    "intelligenceType": "Inteligência linguística"
+  },
+  {
+    "question_number": 43,
+    "question_text": "Sei direções com facilidade",
+    "score_value": 5,
+    "intelligenceType": "Inteligência espacial"
+  },
+  {
+    "question_number": 44,
+    "question_text": "Eu acredito que eu sou responsável por meus atos e quem eu sou",
+    "score_value": 5,
+    "intelligenceType": "Inteligência intrapessoal"
+  },
+  {
+    "question_number": 45,
+    "question_text": "Eu gosto de aprender novas palavras e faço isso facilmente",
+    "score_value": 5,
+    "intelligenceType": "Inteligência linguística"
+  },
+  {
+    "question_number": 46,
+    "question_text": "Usar números e símbolos numéricos é fácil para mim",
+    "score_value": 5,
+    "intelligenceType": "Inteligência lógico-matemática"
+  },
+  {
+    "question_number": 47,
+    "question_text": "Muitas vezes vejo sentidos matemáticos no mundo em torno de mim",
+    "score_value": 5,
+    "intelligenceType": "Inteligência lógico-matemática"
+  },
+  {
+    "question_number": 48,
+    "question_text": "Ver as coisas em três dimensões é fácil para mim, e eu gosto de fazer as coisas em três dimensões",
+    "score_value": 5,
+    "intelligenceType": "Inteligência espacial"
+  },
+  {
+    "question_number": 49,
+    "question_text": "Eu leio e aprecio a poesia e, ocasionalmente, escrevo a minha própria",
+    "score_value": 5,
+    "intelligenceType": "Inteligência linguística"
+  },
+  {
+    "question_number": 50,
+    "question_text": "Gosto de cuidar das minhas plantas em casa",
+    "score_value": 5,
+    "intelligenceType": "Inteligência naturalista"
+  },
+  {
+    "question_number": 51,
+    "question_text": "Eu sou bom em tocar um instrumento e cantar",
+    "score_value": 5,
+    "intelligenceType": "Inteligência musical"
+  },
+  {
+    "question_number": 52,
+    "question_text": "Eu gosto de estar com todos os diferentes tipos de pessoas",
+    "score_value": 5,
+    "intelligenceType": "Inteligência interpessoal"
+  },
+  {
+    "question_number": 53,
+    "question_text": "Eu gosto de me movimentar muito",
+    "score_value": 5,
+    "intelligenceType": "Inteligência corporal-cinestésica"
+  },
+  {
+    "question_number": 54,
+    "question_text": "Minha capacidade de desenhar é reconhecida e elogiada por outros",
+    "score_value": 5,
+    "intelligenceType": "Inteligência espacial"
+  },
+  {
+    "question_number": 55,
+    "question_text": "Costumo procurar fraquezas em mim que eu vejo nos outros",
+    "score_value": 5,
+    "intelligenceType": "Inteligência intrapessoal"
+  },
+  {
+    "question_number": 56,
+    "question_text": "Eu gosto de animais de estimação",
+    "score_value": 5,
+    "intelligenceType": "Inteligência naturalista"
+  }
+]
