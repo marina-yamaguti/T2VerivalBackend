@@ -67,4 +67,91 @@ describe('AuthController', () => {
       }),
     ).rejects.toThrow(UnauthorizedException)
   })
+
+  // Verifica comportamento com entradas inválidas no handle.
+  it('should throw an error when email or password is missing', async () => {
+    await expect(
+      authController.handle({
+        email: '',
+        password: 'validPassword',
+      }),
+    ).rejects.toThrowError();
+  
+    await expect(
+      authController.handle({
+        email: 'test@example.com',
+        password: '',
+      }),
+    ).rejects.toThrowError();
+  });
+
+  // Verifica comportamento quando o PrismaService lança uma exceção.
+  it('should throw UnauthorizedException if Prisma throws an error', async () => {
+    prismaService.user.findUnique = vi.fn().mockRejectedValue(new Error('Database error'));
+  
+    await expect(
+      authController.handle({
+        email: 'test@example.com',
+        password: 'validPassword',
+      }),
+    ).rejects.toThrow(UnauthorizedException);
+  });
+
+  // Adicione testes para garantir que a funcionalidade de recuperação de senha funcione corretamente.
+  it('should send a password reset email for valid user', async () => {
+    const user = {
+      id: 'user-id',
+      email: 'test@example.com',
+    };
+  
+    prismaService.user.findUnique = vi.fn().mockResolvedValue(user);
+    jwtService.sign = vi.fn().mockReturnValue('reset-token');
+    const sendPasswordResetEmailMock = vi.fn();
+    authController['mailService'] = { sendPasswordResetEmail: sendPasswordResetEmailMock } as any;
+  
+    await authController.forgotPassword({ email: 'test@example.com' });
+  
+    expect(jwtService.sign).toHaveBeenCalledWith({ sub: user.id }, { expiresIn: '1h' });
+    expect(sendPasswordResetEmailMock).toHaveBeenCalledWith('test@example.com', 'reset-token');
+  });
+  
+  it('should throw UnauthorizedException for invalid user in forgotPassword', async () => {
+    prismaService.user.findUnique = vi.fn().mockResolvedValue(null);
+  
+    await expect(
+      authController.forgotPassword({ email: 'invalid@example.com' }),
+    ).rejects.toThrow(UnauthorizedException);
+  });
+
+  // Testes para validar a lógica de redefinição de senha.
+  it('should reset the password for valid token and passwords', async () => {
+    const user = {
+      id: 'user-id',
+      password: 'oldPassword',
+    };
+  
+    prismaService.user.findUnique = vi.fn().mockResolvedValue(user);
+    prismaService.user.update = vi.fn().mockResolvedValue({});
+    jwtService.decode = vi.fn().mockReturnValue({ sub: 'user-id' });
+  
+    await authController.resetPassword(
+      { password: 'newPassword', confirmPassword: 'newPassword' },
+      'valid-token',
+    );
+  
+    expect(prismaService.user.update).toHaveBeenCalledWith({
+      where: { id: user.id },
+      data: { password: expect.any(String) },
+    });
+  });
+  
+  it('should throw an error if passwords do not match in resetPassword', async () => {
+    await expect(
+      authController.resetPassword(
+        { password: 'newPassword', confirmPassword: 'differentPassword' },
+        'valid-token',
+      ),
+    ).rejects.toThrowError('Senhas não conferem');
+  });
+
 })
